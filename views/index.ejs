@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+</head>
+<body>
+<div class="container">
+<%= typeof msg != 'undefined' ?msg : '' %>
+<form class="form-horizontal" method="POST" action="/upload" enctype="multipart/form-data">
+<legend>File-Upload</legend>
+<fieldset>
+
+<!-- File Button --> 
+<div class="form-group">
+  <label class="col-md-4 control-label" for="btnfile">Image</label>
+  <div class="col-md-4">
+    <input id="imagefile" name="imagefile" class="input-file" type="file">
+  </div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="btnupload"></label>
+  <div class="col-md-4">
+    <button id="btnupload" name="btnupload" class="btn btn-primary">Submit</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+</div>
+</body>
+</html>
